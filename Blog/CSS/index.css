@@ -1,0 +1,78 @@
+#banner{
+    max-width: 100%;
+    height: auto;
+    z-index:-1;
+    position:absolute;
+    left:0;
+    top:0;
+    min-width: 1600px;
+}
+.welcome{
+    font-size:150px;
+    color:white;
+    z-index: 1;
+    text-align: center;
+    font-family: 'Vibur', cursive;
+}
+.navbar {
+    padding: 5px 50px 5px 50px;
+    text-align: center;
+    color: white;
+}
+#nav {
+    border:1px solid grey;
+    width: 100%;
+margin-top:2px;
+    text-align: center;
+    display: block;
+}
+#banner{
+    max-width: 100%;
+    height: auto;
+    z-index:-1;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.text{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+}
+.text2{
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+}
+#footer{
+    background-color: rgb(207, 207, 207);
+    padding: 20px 0px;
+}
+
+.hover:hover {
+    background-color: #757575;
+}
+.hidden:hover {
+    opacity: 1;
+}
+.link {
+    text-decoration:none;
+    opacity:0
+}
+.backtotop2{
+    text-decoration: none;    
+    cursor:pointer;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 10px 8px;
+    top:10px;
+    left:10px;
+    opacity: 0.7;
+    position: fixed;
+    border-radius: 10px;
+}
+.backtotop2hover:hover{
+    opacity: 0.5
+}
