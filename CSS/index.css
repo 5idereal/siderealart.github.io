@@ -22,7 +22,7 @@
 #nav {
     border:1px solid grey;
     width: 100%;
-margin-top:2px;
+    margin-top:2px;
     text-align: center;
     display: block;
 }
@@ -61,18 +61,42 @@ margin-top:2px;
     text-decoration:none;
     opacity:0
 }
-.backtotop2{
-    text-decoration: none;    
-    cursor:pointer;
-    background-color: #1f1f1f;
-    color: white;
-    padding: 10px 8px;
-    top:10px;
-    left:10px;
-    opacity: 0.7;
-    position: fixed;
-    border-radius: 10px;
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	margin-left: 50px;
 }
-.backtotop2hover:hover{
-    opacity: 0.5
+#back-top a {
+	width: 78px;
+	display: block;
+	text-align: center;
+	font: 13px/100% Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: rgba(122, 122, 122, 0.651);
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: rgb(112, 112, 112);
+}
+/* arrow icon (span tag) */
+#back-top span {
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin-bottom: 7px;
+	background: rgba(170, 170, 170, 0.562) url(../top.png) no-repeat center center;
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: rgba(165, 165, 165, 0.815);
 }

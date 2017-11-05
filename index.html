@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 
-<head> 
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -11,6 +11,35 @@
     <link href="https://fonts.googleapis.com/css?family=Vibur" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <link rel="stylesheet" href="CSS/button.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // hide #back-top first
+            $("#back-top").hide();
+
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
+                    }
+                });
+
+                // scroll body to 0px on click
+                $('#back-top a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+
+        });
+    </script>
 
 </head>
 
@@ -121,10 +150,10 @@
         <p class="text">Whether article spirits new her covered hastily sitting her. Money witty books nor son add. Chicken age had evening
             believe but proceed pretend mrs. At missed advice my it no sister. Miss told ham dull knew see she spot near
             can. Spirit her entire her called.</p>
-        <hr width="90%">
+        <hr  width="95%"  style="margin:auto; border-top:1px rgb(218, 218, 218) solid;" />
 
 
-        <img src="PHOTOS/randomimage2.jpg" width="500px" style="float:left;padding-right:15px;padding-left:40px;" />
+        <img src="PHOTOS/randomimage2.jpg" width="500px" style="float:left;padding-right:15px;padding-left:40px;padding-top:30px;" />
 
         <p class="text2">Arrival entered an if drawing request. How daughters not promotion few knowledge contented. Yet winter law behind
             number stairs garret excuse. Minuter we natural conduct gravity if pointed oh no. Am immediate unwilling of attempted
@@ -146,10 +175,14 @@
         <br>
 
     </div>
+    <p id="back-top">
+        <a href="#top">
+            <span></span>回頁頂</a>
+    </p>
     <div id="footer">
-        <a href="#top" class="backtotop2 backtotop2hover">回頁頂</a>
-        <p style="text-align:center;z-index:1;margin:0px 0px 0px 0px;" >嗨</p>
-        <a href="https://lh3.googleusercontent.com/NPKsJGy4NwpPA_7iGw19LzKBAVawrXrHorBcwSzVrlnHOTDyltPBSrrhSDE7q2vYfnuE9X8my2oaYVG1EYUD7ixiR2FmmajyQF42lrHHBJ8vP3fhKkiwJzqVgBnrw_lMzeNvne23JPtW506PPsOv2XV1n0bxljhPxyq1bPDbe7vHZXacjPGF4wYJRpjST484VvzFkpPwQrbo8AywTggEWqPn8zt4uCnyPKZpowFWbC-QLRtgrf1oJW9uZa-C7KDdamSdvxVUvcMm6FPyuF1-MDjXN5yTPh4RIK2BOIKXHfWlgUimPYGFytxpL8uOFuy646opEzqDA5jt74KLaGfvTLMJzcLshZV0O7mNNgxguwtTGvX9byw7PhQnq-pPzE_1GIZB6bG_69ODKPTx8lbXnM6fNtIQ3GP5FkxcTdnwK5kUeC-eH7uQr0BUgkn01YRJ80tsSIQbjlxlDvzyr-UReqicScPw7cJgCRjcUnicB_HY7l-yQzmruUqCNNqeAzoiuQTg1Zgcxbl3aCWcC9m5zpKUreWzLvLP_Rnq_QGE71L8nvZS_yqEcOzgQohqDcgcO1nBZPz8-nM3Eg-tJIQc0R5rFRgZmS52lLTZUQb54wY=w175-h236-no" class="hidden link">.......................................................................................................................................................................................................................................................................................................................................................</a> 
+        <p style="text-align:center;z-index:1;margin:0px 0px 0px 0px;">嗨</p>
+        <a href="https://lh3.googleusercontent.com/NPKsJGy4NwpPA_7iGw19LzKBAVawrXrHorBcwSzVrlnHOTDyltPBSrrhSDE7q2vYfnuE9X8my2oaYVG1EYUD7ixiR2FmmajyQF42lrHHBJ8vP3fhKkiwJzqVgBnrw_lMzeNvne23JPtW506PPsOv2XV1n0bxljhPxyq1bPDbe7vHZXacjPGF4wYJRpjST484VvzFkpPwQrbo8AywTggEWqPn8zt4uCnyPKZpowFWbC-QLRtgrf1oJW9uZa-C7KDdamSdvxVUvcMm6FPyuF1-MDjXN5yTPh4RIK2BOIKXHfWlgUimPYGFytxpL8uOFuy646opEzqDA5jt74KLaGfvTLMJzcLshZV0O7mNNgxguwtTGvX9byw7PhQnq-pPzE_1GIZB6bG_69ODKPTx8lbXnM6fNtIQ3GP5FkxcTdnwK5kUeC-eH7uQr0BUgkn01YRJ80tsSIQbjlxlDvzyr-UReqicScPw7cJgCRjcUnicB_HY7l-yQzmruUqCNNqeAzoiuQTg1Zgcxbl3aCWcC9m5zpKUreWzLvLP_Rnq_QGE71L8nvZS_yqEcOzgQohqDcgcO1nBZPz8-nM3Eg-tJIQc0R5rFRgZmS52lLTZUQb54wY=w175-h236-no"
+            class="hidden link">.......................................................................................................................................................................................................................................................................................................................................................</a>
     </div>
 </body>
 
