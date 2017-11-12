@@ -1,47 +1,47 @@
 
 .image01 {
-    width: 100%;
+    max-width: 40%;
     overflow: hidden;
-    position: relative;
+    position: absolute;
     -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
     box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
-
+    outline: 2px solid white;
+    right: 20px;
+    top:400px;
 }
 .image01 img {
-    width: 35%;
+    max-width: 100%;
     top: 0;
     position: relative;
-    left: 1;
+    left: 0;
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
-    -webkit-transition: -webkit-transform 0.2s;
-    -moz-transition: -moz-transform 0.2s;
-    -o-transition: -o-transform 0.2s;
-    transition: transform 0.2s;
-    float: right;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    -o-transition: -o-transform 0.3s;
+    transition: transform 0.3s;
 }
 .image01 .ovrly {
     background: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    left: 0;
+    right: 0;
     top: 0;
+    height: 100%;
     position: absolute;
-    width: 35%;
+    width: 100%;
     opacity: 0;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 .image01 .buttons {
     position: absolute;
     top: 50%;
-    left: 18%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -57,6 +57,7 @@
     -moz-border-radius: 50%;
     border-radius: 50%;
     color: rgba(50, 50, 50, 0.9);
+    display: inline-block;
     margin: 0 1px;
     line-height: 40px;
     font-size: 16px;
@@ -69,7 +70,6 @@
     -o-transition: all 0.3s;
     transition: all 0.3s;
     opacity: 0;
-    float: right;
 }
 .image01:hover img {
     -webkit-filter: blur(2px);
@@ -84,5 +84,180 @@
     opacity: 1;
 }
 .image01:hover .buttons .fa {
+    opacity: 1;
+}
+
+.image02 {
+    max-width: 40%;
+    overflow: hidden;
+    position: absolute;
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    outline: 2px solid white;
+    right: 20px;
+    top:800px;
+}
+.image02 img {
+    max-width: 100%;
+    top: 0;
+    position: relative;
+    left: 0;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    -o-transition: -o-transform 0.3s;
+    transition: transform 0.3s;
+}
+.image02 .ovrly {
+    background: rgba(0, 0, 0, 0.5);
+    right: 0;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.image02 .buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.image02 .buttons .fa {
+    background: white;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: rgba(50, 50, 50, 0.9);
+    display: inline-block;
+    margin: 0 1px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.image02:hover img {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.image02:hover .ovrly {
+    opacity: 1;
+}
+.image02:hover .buttons .fa {
+    opacity: 1;
+}
+.image03 {
+    max-width: 40%;
+    overflow: hidden;
+    position: absolute;
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    outline: 2px solid white;
+    right: 20px;
+    top:1300px;
+}
+.image03 img {
+    max-width: 100%;
+    top: 0;
+    position: relative;
+    left: 0;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    -o-transition: -o-transform 0.3s;
+    transition: transform 0.3s;
+}
+.image03 .ovrly {
+    background: rgba(0, 0, 0, 0.5);
+    right: 0;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.image03 .buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.image03 .buttons .fa {
+    background: rgb(256, 256, 256);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: rgba(50, 50, 50, 0.9);
+    display: inline-block;
+    margin: 0 1px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.image03:hover img {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.image03:hover .ovrly {
+    opacity: 1;
+}
+.image03:hover .buttons .fa {
     opacity: 1;
 }
