@@ -8,12 +8,12 @@
     min-width: 1600px;
 }
 .welcome{
-    font-size:10em;
+    font-size:20vmin;
     color:white;
     z-index: 1;
     text-align: center;
     font-family: 'Vibur', cursive;
-    word-break: break-all;
+
 }
 .navbar {
     padding: 5px 50px 5px 50px;
