@@ -1,20 +1,24 @@
 .cover{
 width:250px;
 height:400px;
-margin-left:40px;
-
+border: 1px black solid;
 }
 .cover2{
     width:250px;
     height:400px;
 margin-left:10px;
-}
-.div{
-    text-align:center;
+border: 1px black solid;
 }
 
 .booklink{
-padding-bottom: 20px;
-padding-left:160px;
+left:130px;
+bottom:5px;
 position: relative;
-}
+    }
+
+    .div1{
+    border: 2px rgb(0, 0, 0) solid;
+    padding: 9px;
+    display: inline-block;
+    border-radius: 5px;
+    }
