@@ -1,3 +1,7 @@
-.lyric{
+.lyric-e{
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+.lyric-c{
+    font-size: 15px;
 }
