@@ -1,6 +1,7 @@
 .lyric-e{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 22px;
+<<<<<<< HEAD
     margin-left:50px;
     display:inline-block;
 }
@@ -21,13 +22,35 @@
     float: right;
     margin-right:570px;
     margin-top:15px;
+=======
+    padding-left:50px;
+}
+.lyric-c{
+    font-size: 16px;
+    padding-left:50px;
+}
+.lyric-e:hover{
+background-color: #b9b9b9;
+border-left: 5px solid #646464;
+font-size: 22px;
+}
+.lyric-c:hover{
+    background-color: #b9b9b9;
+    border-left: 5px solid #646464;
+    font-size: 16px;
+    }
+.title-c{
+    font-size: 12vmin;
+    float: right;
+    margin-right:870px;
+    font-family: Microsoft JhengHei;
+>>>>>>> 74c489e9bb67fc4fcfc02cc68a93cb469a53464e
 }
 .title-e{
     font-size: 36px;
 color: #9c9c9c;
-
 margin-left:40px;
-margin-top:120px;
+margin-top:150px;
 display: inline-block;
 position: absolute;
 }
