@@ -1,0 +1,32 @@
+
+.lyric-c{
+    font-size: 24px;
+    margin-left:50px;
+display:inline;
+
+    
+    font-family: Microsoft JhengHei;
+}
+.lyric-c:hover{
+    background-color: #e4e4e4;
+    box-shadow: -5px 0 0 rgb(143, 143, 143)
+}
+
+.title-c{
+    font-size: 7vmin;
+    float: right;
+    margin-right:335px;
+    margin-top:20px;
+    
+}
+.title-e{
+    font-size: 36px;
+color: #9c9c9c;
+margin-left:40px;
+margin-top:120px;
+display: inline-block;
+position: absolute;
+}
+.title-e:hover{
+    color: rgb(68, 68, 68);
+}
