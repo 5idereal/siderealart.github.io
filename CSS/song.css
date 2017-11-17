@@ -1,22 +1,33 @@
 .lyric-e{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 22px;
+    padding-left:50px;
 }
 .lyric-c{
     font-size: 16px;
+    padding-left:50px;
 }
+.lyric-e:hover{
+background-color: #b9b9b9;
+border-left: 5px solid #646464;
+font-size: 22px;
+}
+.lyric-c:hover{
+    background-color: #b9b9b9;
+    border-left: 5px solid #646464;
+    font-size: 16px;
+    }
 .title-c{
-    font-size: 24vmin;
+    font-size: 12vmin;
     float: right;
-    margin-right:530px;
-    
+    margin-right:870px;
+    font-family: Microsoft JhengHei;
 }
 .title-e{
     font-size: 36px;
 color: #9c9c9c;
-
 margin-left:40px;
-margin-top:120px;
+margin-top:150px;
 display: inline-block;
 position: absolute;
 }
