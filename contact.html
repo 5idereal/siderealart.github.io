@@ -17,6 +17,40 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
+        <script>
+            
+            var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+                "mp3": "audio/mpeg",
+                "mp4": "audio/mp4",
+                "ogg": "audio/ogg",
+                "wav": "audio/wav"
+            }
+            
+            function createsoundbite(sound){
+                var html5audio=document.createElement('audio')
+                if (html5audio.canPlayType){ 
+                    for (var i=0; i<arguments.length; i++){
+                        var sourceel=document.createElement('source')
+                        sourceel.setAttribute('src', arguments[i])
+                        if (arguments[i].match(/\.(\w+)$/i))
+                            sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+                        html5audio.appendChild(sourceel)
+                    }
+                    html5audio.load()
+                    html5audio.playclip=function(){
+                        html5audio.pause()
+                        html5audio.currentTime=0
+                        html5audio.play()
+                    }
+                    return html5audio
+                }
+                else{
+                    return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+                }
+            }
+            
+            var mouseoversound=createsoundbite("notime.ogg")
+            </script>
 </head>
 
 <body>
@@ -79,22 +113,22 @@
     <br>
     <div style="text-align:center;">
         <a href="mailto:nelson22768384@gmail.com">
-            <img src="PHOTOS/email.png" style="margin:auto;width: 3%;display:inline-block;padding-right:20px" />
+            <img src="PHOTOS/email.png"  onmouseover="mouseoversound.playclip()" style="margin:auto;width: 3%;display:inline-block;padding-right:20px" />
         </a>
         <a href="https://www.instagram.com/enfong_tsao/">
-            <img src="PHOTOS/instagram.png" style="margin:auto;width: 3%;display:inline-block;padding-right:20px" />
+            <img src="PHOTOS/instagram.png"  onmouseover="mouseoversound.playclip()" style="margin:auto;width: 3%;display:inline-block;padding-right:20px" />
         </a>
         <a href="https://plus.google.com/+曹恩逢?hl=zh-TW">
-            <img src="PHOTOS/google-plus.png" style="margin:auto;width: 3%;display:inline-block;padding-right:20px" />
+            <img src="PHOTOS/google-plus.png" onmouseover="mouseoversound.playclip()" style="margin:auto;width: 3%;display:inline-block;padding-right:20px" />
         </a>
         <a href="https://www.facebook.com/SiderealArt">
-            <img src="PHOTOS/facebook.png" style="margin:auto;width: 3%;display:inline-block;padding-right:20px" />
+            <img src="PHOTOS/facebook.png"  onmouseover="mouseoversound.playclip()" style="margin:auto;width: 3%;display:inline-block;padding-right:20px" />
         </a>
         <a href="https://twitter.com/SiderealArt">
-            <img src="PHOTOS/twitter.png" style="margin:auto;width: 3%;padding-right:20px" />
+            <img src="PHOTOS/twitter.png"  onmouseover="mouseoversound.playclip()" style="margin:auto;width: 3%;padding-right:20px" />
         </a>
         <a href="skype:echo123?call">
-            <img src="PHOTOS/skype.png" style="margin:auto;width: 3%;display:inline-block;padding-right:20px" />
+            <img src="PHOTOS/skype.png" onmouseover="mouseoversound.playclip()"  style="margin:auto;width: 3%;display:inline-block;padding-right:20px" />
         </a>
     </div>
     <form>
