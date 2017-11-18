@@ -16,11 +16,14 @@
     box-shadow: -5px 0 0 rgb(143, 143, 143)
 }
 
+
 .title-c{
-    font-size: 10vmin;
-    float: right;
-    margin-right:485px;
-    margin-top:10px;
+    font-size: 12vmin;
+    display: inline-block;
+    position: absolute;
+
+    margin-left:35px;
+    margin-top:0px;
 }
 .title-e{
     font-size: 36px;

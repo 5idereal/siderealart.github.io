@@ -1,0 +1,76 @@
+.lyric-e{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 26px;
+    margin-left:50px;
+    display:inline-block;
+}
+.lyric-c{
+    font-size: 18px;
+    margin-left:50px;
+    clear: left;
+    font-family: Microsoft JhengHei;
+}
+.lyric-e:hover{
+    background-color: #e4e4e4;
+    box-shadow: -5px 0 0 rgb(143, 143, 143)
+}
+
+.title-c{
+    font-size: 12vmin;
+    display: inline-block;
+    position: absolute;
+
+    margin-left:35px;
+    margin-top:0px;
+}
+.title-e{
+    font-size: 36px;
+color: #9c9c9c;
+margin-left:40px;
+margin-top:150px;
+display: inline-block;
+position: absolute;
+}
+.title-e:hover{
+    color: rgb(68, 68, 68);
+}
+
+#back-top {
+	position: fixed;
+	bottom: 30px;
+right:40px;
+}
+#back-top a {
+	width: 78px;
+	display: block;
+	text-align: center;
+	font: 13px/100% Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: rgba(122, 122, 122, 0.651);
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: rgb(112, 112, 112);
+}
+/* arrow icon (span tag) */
+#back-top span {
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin-bottom: 7px;
+	background: rgba(170, 170, 170, 0.562) url(../top.png) no-repeat center center;
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: rgba(165, 165, 165, 0.815);
+}

@@ -13,11 +13,12 @@ display:inline;
 }
 
 .title-c{
-    font-size: 8vmin;
-    float: right;
-    margin-right:250px;
-    margin-top:10px;
-    
+    font-size: 10vmin;
+    display: inline-block;
+    position: absolute;
+
+    margin-left:35px;
+    margin-top:-10px;
 }
 .title-e{
     font-size: 36px;
@@ -29,4 +30,12 @@ position: absolute;
 }
 .title-e:hover{
     color: rgb(68, 68, 68);
+}
+#help{
+color:#aaaaaa;
+font-size: 14px;
+position: absolute;
+display: inline-block;
+left:10px;
+margin-top:330px;
 }
