@@ -1,82 +1,107 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
-html, body, section {
-    height: 100%;
-    width: 100%;
+body{
+    margin:0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #464646;
 }
 
-body {
-    color: #fff;
-    text-align: center;
-}
-
-.xop-container {
-    display: flex;
-}
-
-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.xop-left {
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(255,255,255,0.10)),
-        url(../PHOTOS/book.jpg);
+.imageleft{
+    background:  linear-gradient(rgba(0,0,0,0.85), rgba(164,222,102, 0.10)),
+    url(PHOTOS/book.jpg);
     background-size: cover;
     background-position: center;
-    flex: 1;
-    padding: 5px;
     transition: all .2s ease-in-out;
+    display:block;
+    float:left;
+    width:33vw;
+    height:100vh;
+    margin-left:8px;
 }
-
-.xop-right {
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(164,222,102, 0.10)),
-        url(../PHOTOS/song.jpg);
-        background-size: cover;
-        background-position: center;
-    flex: 1;
-    padding: 0px;
+.imagecenter{
+    background:  linear-gradient(rgba(0,0,0,0.85), rgba(164,222,102, 0.10)),
+    url(PHOTOS/misc.jpg);
+    background-size: cover;
+    background-position: center;
     transition: all .2s ease-in-out;
+    display:inline-block;
+    margin: auto;
+    position: static;
+    width:33vw;
+    height:100vh;
 }
-
-.xop-left:hover, .xop-right:hover {
-    transform: scale(1.1);
+.imageright{
+    background:  linear-gradient(rgba(0,0,0,0.85), rgba(164,222,102, 0.10)),
+    url(PHOTOS/song.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all .2s ease-in-out;
+    display:block;
+float:right;
+margin-right:8px;
+width:33vw;
+height:100vh;
 }
-
-.xop-left h1 {
-    font-family: 'Rock Salt', cursive;
-    font-size: 6rem;
-    margin-bottom:20px;
-    margin-top:20px;
-}
-
-.xop-right h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 6rem;    margin-bottom:20px;
-    margin-top:20px;
-}
-
-.xop-button {
+.button{
     border-radius: 30px;
     color: #fff;
     background-color: #fcad26;
     padding: 1.5%;
-    margin: 0 2%;
+margin:auto;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
+    display: block;
     font-size: 1.5rem;
     cursor: pointer;
     transition: all 0.3s;
     width: 150px;
+    display:absolute;
+    z-index: -122;
+}
+.button:hover{
+    background-color:#fcc567;
+    
+}
+.title-c{
+color:white;
+font-size: 4vmin;
+text-align: center;
 }
 
-.xop-button:hover {
-    background: #fcc567;
-    color: #fff;
+.title-e{
+font-family: 'Permanent Marker', cursive;
+color:white;
+font-size: 8rem;
+text-align: center;
+margin-bottom:60px;
+font-size-adjust:0.6;
 }
-.sub{
-    font-size: 6vmin;;
+.title-e2{
+    font-family: 'Rock Salt', cursive;
+    color:white;
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom:20px;
+    font-size-adjust:0.55;
+    }
+
+    .title-e3{
+        font-family: 'Pacifico', cursive;
+        color:white;
+        font-size: 7rem;
+        text-align: center;
+        margin-bottom:20px;
+        font-size-adjust:0.5;
+        }
+.imageleft:hover{
+    transform: scale(1.1);
+}
+.imagecenter:hover{
+    transform: scale(1.1);
+}
+.imageright:hover{
+    transform: scale(1.1);
 }
