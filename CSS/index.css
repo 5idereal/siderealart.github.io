@@ -71,7 +71,8 @@
 	width: 78px;
 	display: block;
 	text-align: center;
-	font: 13px/100% Arial, Helvetica, sans-serif;
+    font: 13px/100%;
+    font-family: Microsoft JhengHei;
 	text-decoration: none;
 	color: rgba(122, 122, 122, 0.651);
 	/* background color transition */
