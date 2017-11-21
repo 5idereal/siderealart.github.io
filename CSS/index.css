@@ -1,11 +1,15 @@
-#banner{
-    max-width: 100%;
-    height: auto;
-    z-index:-1;
-    position:absolute;
-    left:0;
-    top:0;
-    min-width: 1600px;
+.parallax {
+    /* The image used */
+    background-image: url("../PHOTOS/indexbg.jpg");
+
+    /* Set a specific height */
+    height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .welcome{
     font-size:20vmin;
@@ -27,14 +31,7 @@
     text-align: center;
     display: block;
 }
-#banner{
-    max-width: 100%;
-    height: auto;
-    z-index:-1;
-    position:absolute;
-    left:0;
-    top:0;
-}
+
 .text{
     padding-left: 40px;
     padding-right: 40px;
@@ -101,4 +98,17 @@
 }
 #back-top a:hover span {
 	background-color: rgba(165, 165, 165, 0.815);
+}
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Vibur', cursive;
+    font-size:20vmin;
 }
