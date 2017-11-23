@@ -15,64 +15,70 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>p, a, h4, h2{
-    font-family: Microsoft JhengHei;}
+    <style>
+        p,
+        a,
+        h4,
+        h2 {
+            font-family: Microsoft JhengHei;
+        }
     </style>
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="../index">首頁</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../about">關於我
-                        
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../contact">聯絡我</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../test">測試</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../clock">時鐘</a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="../books">回書本列表<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about">關於我
+
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact">聯絡我</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../test">測試</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../clock">時鐘</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../books">回書本列表
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown link
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <span class="navbar-text">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <span class="navbar-text">
             看三小
-                </span>
-              </nav>
+        </span>
+    </nav>
+    <div class="parallax"></div>
+    <div class="container centered">歌曲列表</div>
+    <div class="container centered2">Song List</div>
 
-              <p class="title-c">歌曲列表</p>
-              <p class="title-e">Song List</p>
- 
-              <img src="../PHOTOS/music.jpg" class="image">
-              <hr width="95%" style="margin:auto; border-top:1px rgb(216, 216, 216) solid;padding-bottom:20px;" />
+    <hr width="95%" style="margin:auto; border-top:1px rgb(216, 216, 216) solid;padding-bottom:20px;" />
     <div class="card" style="width: 20rem;margin-left:50px;display:inline-block;">
-        <div class="item" >
+        <div class="item">
             <img class="card-img-top" src="../PHOTOS/spongebob.jpg" alt="Card image cap" style="object-fit: cover;height: 138px;">
             <div class="item-overlay top"></div>
         </div>
@@ -159,7 +165,7 @@
             <h2 class="card-title" style="font-size:12px;color:#818181;margin-bottom:20px;">81000</h2>
             <audio id="player" src="../tooloud.ogg"></audio>
             <div>
-            <a href="#" class="btn btn-primary" style="padding:5px 80px;margin-left:40px;"onclick="document.getElementById('player').play()">前往</a>
+                <a href="#" class="btn btn-primary" style="padding:5px 80px;margin-left:40px;" onclick="document.getElementById('player').play()">前往</a>
             </div>
         </div>
     </div>
