@@ -1,23 +1,24 @@
+.top{
+  position: relative;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:20vmin;
+}
+.top2{
 
-.container{
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  .centered2{
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size:10vmin;
-  }
-  .centered{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size:20vmin;
-  }
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:10vmin;
+}
+
   .parallax {
     /* The image used */
   
@@ -33,12 +34,40 @@
     background-size: cover;
   }
   .booklink{
-text-align: center;
+      text-align: center;
       font-size: 16px;
-display: inline-block;
-color:#c4c4c4;
-width:100%;
-text-decoration: none;
-text-decoration-color: #c4c4c4;
-margin-bottom:5px;
+      display: inline-block;
+      color:#c4c4c4;
+      width:100%;
+      text-decoration: none;
+      text-decoration-color: #c4c4c4;
+      margin-bottom:5px;
   }
+.book{
+  background-color:rgb(59, 59, 59);
+  display: inline-block;
+  width:30vw;
+  margin-left:60px;
+  padding:10px;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+.book:hover{
+  background-color: rgb(34, 34, 34);
+}
+.book2{
+  background-color:rgb(58, 58, 58);
+  display: inline-block;
+  width:30vw;
+  margin-left:10px;
+  padding:10px;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+.book2:hover{
+  background-color: rgb(34, 34, 34);
+}
