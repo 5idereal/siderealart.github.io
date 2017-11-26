@@ -2,12 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 body{
-    overflow-x: hidden;
-    overflow-y: hidden;
+overflow: hidden;
 }
 .img-effect{
     max-width: 100%; 
-    width: 33vw;
+    width: 33.3vw;
     margin: auto;
     height: 100vh;
   }
@@ -32,7 +31,7 @@ figure img {
     transform: scale(1.2);
   }
   figure {
-      width:33vw;
+      width:33.4vw;
       height:100vh;
       overflow:hidden;
     }

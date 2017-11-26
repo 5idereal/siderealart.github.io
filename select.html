@@ -8,7 +8,7 @@
     <title>D&V Bookstore</title>
     <link rel="stylesheet" href="CSS/select.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Spectral+SC|Vibur|Francois+One" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Spectral+SC|Vibur|Francois+One" rel="stylesheet">
     <style>
         p,
         a {
@@ -18,8 +18,7 @@
 </head>
 
 <body>
-    <div>
-        <div style="position:relative;">
+        <div style="position:relative;display:inline-block;">
             <figure>
                 <div class="img-effect">
                     <img src="PHOTOS/misc.jpg" style="height:100vh;width:33vw;object-fit: cover;">
@@ -29,20 +28,29 @@
             <div class="text-banner">雜項</div>
             <a class="btn btn-light btn-lg" href="#" role="button" style="position:absolute;top:450px;left:10vw;opacity:0.7;font-size:4vmin;padding-left:60px;padding-right:60px;border-radius:25px;">前往</a>
         </div>
-    </div>
-    <div>
-            <div style="position:relative;left:50%;">
-                <figure>
-                    <div class="img-effect">
-                        <img src="PHOTOS/song.jpg" style="height:100vh;width:33vw;object-fit: cover;">
-                    </div>
-                </figure>
-                <div class="title-banner" style="font-family: 'Josefin Sans', sans-serif;">歌曲</div>
-                <div class="text-banner">Songs</div>
-                <a class="btn btn-light btn-lg" href="#" role="button" style="position:absolute;top:250px;left:60px;">前往</a>
-            </div>
+        <div style="position:absolute;left:33.3%;display:inline-block;">
+            <figure>
+                <div class="img-effect">
+                    <img src="PHOTOS/song.jpg" style="height:100vh;width:33vw;object-fit: cover;">
+                </div>
+            </figure>
+            <div class="title-banner" style="font-family: 'Josefin Sans', sans-serif;">Songs</div>
+            <div class="text-banner">歌曲</div>
+            <a class="btn btn-light btn-lg" href="#" role="button" style="position:absolute;top:450px;left:10vw;opacity:0.7;font-size:4vmin;padding-left:60px;padding-right:60px;border-radius:25px;">前往</a>
         </div>
-        
+
+    <div style="position:absolute;right:0px;display:inline-block;">
+        <figure>
+            <div class="img-effect">
+                <img src="PHOTOS/book.jpg" style="height:100vh;width:33vw;object-fit: cover;right:0px;">
+            </div>
+        </figure>
+        <div class="title-banner" style="font-family: 'Oswald', sans-serif;">Books</div>
+        <div class="text-banner">書本</div>
+        <a class="btn btn-light btn-lg" href="#" role="button" style="position:absolute;top:450px;left:10vw;opacity:0.7;font-size:4vmin;padding-left:60px;padding-right:60px;border-radius:25px;">前往</a>
+    </div>
+    </div>
+
 </body>
 
 </html>
