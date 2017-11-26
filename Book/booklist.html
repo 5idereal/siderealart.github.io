@@ -14,8 +14,15 @@
     }
   </script>
   <script>
-$(window).scroll(function(){
-  $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
+ jQuery(function($) {
+  var divs = $('.fade');
+  $(window).on('scroll', function() {
+      var st = $(this).scrollTop();
+      divs.css({ 
+          'margin-top' : -(st/3)+"px", 
+          'opacity' : 1 - st/35
+      }); 
+  });
 });
   </script>
   <script src="JS/jquery-3.2.1.js"></script>
@@ -79,8 +86,8 @@ $(window).scroll(function(){
     </span>
   </nav>
   <div class="parallax"></div>
-  <div class="top">書本列表</div>
-  <div class="top2">Book List</div>
+  <div class="top fade">書本列表</div>
+  <div class="top2 fade">Book List</div>
 
   <hr width="95%" style="margin:auto; border-top:1px rgb(117, 117, 117) solid;padding-bottom:20px;margin-top:15px;" />
 

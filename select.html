@@ -7,29 +7,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>D&V Bookstore</title>
     <link rel="stylesheet" href="CSS/select.css">
-    <style> p, a{
-        font-family: Microsoft JhengHei;
-    }</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Spectral+SC|Vibur|Francois+One" rel="stylesheet"> 
+    <style>
+        p,
+        a {
+            font-family: Microsoft JhengHei;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="imageleft">
-        <p class="title-e">Books</p>
-        <p class="title-c">書本</p>
-        <a href="books" class="button">前往</a>
+    <div>
+        <div style="position:relative;">
+            <figure>
+                <div class="img-effect">
+                    <img src="PHOTOS/misc.jpg" style="height:100vh;width:33vw;object-fit: cover;">
+                </div>
+            </figure>
+            <div class="title-banner">Misc</div>
+            <div class="text-banner">雜項</div>
+            <a class="btn btn-light btn-lg" href="#" role="button" style="position:absolute;top:450px;left:10vw;opacity:0.7;font-size:4vmin;padding-left:60px;padding-right:60px;border-radius:25px;">前往</a>
+        </div>
     </div>
-    <div class="imagecenter">
-        <p class="title-e2">Misc.</p>
-        <p class="title-c">雜項</p>
-        <a href="Book/misc" class="button">前往</a>
-    </div>
-
-    <div class="imageright">
-        <p class="title-e3">Songs</p>
-        <p class="title-c">歌曲</p>
-        <a href="Book/songlist" class="button">前往</a>
-
-    </div>
+    <div>
+            <div style="position:relative;left:50%;">
+                <figure>
+                    <div class="img-effect">
+                        <img src="PHOTOS/song.jpg" style="height:100vh;width:33vw;object-fit: cover;">
+                    </div>
+                </figure>
+                <div class="title-banner" style="font-family: 'Josefin Sans', sans-serif;">歌曲</div>
+                <div class="text-banner">Songs</div>
+                <a class="btn btn-light btn-lg" href="#" role="button" style="position:absolute;top:250px;left:60px;">前往</a>
+            </div>
+        </div>
+        
 </body>
 
 </html>

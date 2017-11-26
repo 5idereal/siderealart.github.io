@@ -1,6 +1,6 @@
-
-
-
+body{
+overflow-x: hidden;
+}
 .parallax {
     /* The image used */
     background-image: url("../PHOTOS/indexbg.jpg");
@@ -8,100 +8,12 @@
     /* Set a specific height */
     height: 1000px;
 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.welcome{
-    font-size:20vmin;
-    color:white;
-    z-index: 1;
-    text-align: center;
-    font-family: 'Vibur', cursive;
 
-}
-.navbar {
-    padding: 5px 50px 5px 50px;
-    text-align: center;
-    color: white;
-}
-#nav {
-    border:1px solid grey;
-    width: 100%;
-    margin-top:2px;
-    text-align: center;
-    display: block;
-}
-
-.text{
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 20px;
-    font-family: 'Josefin Slab', serif;
-}
-.text2{
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 20px;
-    font-family: 'Josefin Slab', serif;
-}
-#footer{
-    background-color: rgb(207, 207, 207);
-    padding: 20px 0px;
-}
-
-.hover:hover {
-    background-color: #757575;
-}
-.hidden:hover {
-    opacity: 1;
-}
-.link {
-    text-decoration:none;
-    opacity:0
-}
-#back-top {
-	position: fixed;
-	bottom: 30px;
-	margin-left: 50px;
-}
-#back-top a {
-	width: 78px;
-	display: block;
-	text-align: center;
-    font: 13px/100%;
-    font-family: Microsoft JhengHei;
-	text-decoration: none;
-	color: rgba(122, 122, 122, 0.651);
-	/* background color transition */
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	transition: 1s;
-}
-#back-top a:hover {
-	color: rgb(112, 112, 112);
-}
-/* arrow icon (span tag) */
-#back-top span {
-	width: 80px;
-	height: 80px;
-	display: block;
-	margin-bottom: 7px;
-	background: rgba(170, 170, 170, 0.562) url(../top.png) no-repeat center center;
-	/* rounded corners */
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	/* background color transition */
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	transition: 1s;
-}
-#back-top a:hover span {
-	background-color: rgba(165, 165, 165, 0.815);
-}
 .container{
     position: relative;
     text-align: center;
@@ -115,3 +27,68 @@
     font-family: 'Vibur', cursive;
     font-size:20vmin;
 }
+
+.title-banner {
+    position: absolute;
+    top:80px;
+    left:60px;
+    font-family: 'Spectral SC', serif;
+    color:white;
+    font-size: 7vmin;
+
+}
+.title-banner2 {
+    position: absolute;
+    top:80px;
+    font-family: 'Spectral SC', serif;
+    color:white;
+    font-size: 7vmin;
+right:60px;
+
+}
+.text-banner{
+    position: absolute;
+    top:175px;
+    left:60px;
+    color:white;
+    font-size: 3vmin;
+
+}
+.text-banner2{
+    position: absolute;
+    top:175px;
+    right:60px;
+    color:white;
+    font-size: 3vmin;
+    right:60px;
+}
+.img-effect{
+    max-width: 100%; 
+    width: 99vw;
+    margin: auto;
+  }
+  
+  .img-effect::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0, rgba(65, 80, 47, 0.1));
+    margin-top: -500px;
+    height: 400px;
+    width: 100%;
+    content: '';
+  }
+figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  figure:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  figure {
+      width:99vw;
+      height:500px;
+      overflow:hidden;
+  }
