@@ -1,59 +1,98 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="JS/jquery-3.2.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Misc</title>
+  <link rel="stylesheet" href="../CSS/misc.css">
+  <script src="../JS/jquery-3.2.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000000">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="../index">首頁</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../about">關於我</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../contact">聯絡我</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../test">測試</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../clock">時鐘</a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="../select">回去
-                        <span class="sr-only">(current)</span>
-                      </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown link
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <span class="navbar-text">
-                  D&V Bookstore
-                </span>
-              </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000000">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index">首頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about">關於我</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../contact">聯絡我</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../test">測試</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../clock">時鐘</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="../select">回去
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <span class="navbar-text">
+      D&V Bookstore
+    </span>
+  </nav>
+  <div class="parallax"></div>
+  <div class="container centered">雜項</div>
+  <div class="container centered2">Misc</div>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    閱讀
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">新書預告</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="Pages/BP1.jpg" class="pageimg" />
+          <img src="Pages/BP2.jpg" class="pageimg" />
+          <img src="Pages/BP3.jpg" class="pageimg" />
+          <img src="Pages/BP4.jpg" class="pageimg" />
+          <img src="Pages/BP5.jpg" class="pageimg" />
+          <img src="Pages/BP6.jpg" class="pageimg" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
