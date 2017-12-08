@@ -6,13 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="PHOTOS/index_icon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Spectral+SC|Vibur|Francois+One|Raleway|Teko" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Spectral+SC|Vibur|Francois+One|Raleway|Teko" rel="stylesheet">
     <link href="CSS/index.css" rel="stylesheet" />
     <script src="JS/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <title>首頁</title>
+    <script>
+        $('#container').mousemove(function (e) {
+            parallaxIt(e, '.parallax', -100);
+            parallaxIt(e, 'div', -30);
+        });
+
+        function parallaxIt(e, target, movement) {
+            var $this = $('#container');
+            var relX = e.pageX - $this.offset().left;
+            var relY = e.pageY - $this.offset().top;
+
+            TweenMax.to(target, 1, {
+                x: (relX - $this.width() / 2) / $this.width() * movement,
+                y: (relY - $this.height() / 2) / $this.height() * movement
+            })
+        }</script>
 </head>
 <!-- 
 ==========================++++??????++===~==+++++++++++++????+++=======~~:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::~~:::::~~~:~~~~~~:
@@ -110,8 +126,11 @@ II77?++===+++++++++++++++==~~:::~=++7$$ZZZZZ8ZZZOO8OZZ?I+??+???I+?++???+?+++++++
 +++++++++++========~~~~~~~~~:~~~~======++++++++++++++?++???????+++++++++++++++++++===+=++==++=========+=================+++?????????III777I?+===================
 ??+++++++==========~~:::~::::~~~~~=====+++++++++++++++???++++++++?++++++++++++++++++??++???+??+++==========~==========+++++?????IIIIIIIIIII?++==================
 -->
+
 <body>
-    <div class="parallax"></div>
+    <div id="container">
+        <div class="parallax"></div>
+    </div>
     <div class="container centered">Welcome!</div>
 
     <div>
@@ -121,7 +140,7 @@ II77?++===+++++++++++++++==~~:::~=++7$$ZZZZZ8ZZZOO8OZZ?I+??+???I+?++???+?+++++++
                     <img src="PHOTOS/contact.jpeg" style="height:500px;width:99vw;object-fit: cover;">
                 </div>
             </figure>
-            <div class="title-banner"style="font-family: 'Josefin Sans', sans-serif;">Contact Me</div>
+            <div class="title-banner" style="font-family: 'Josefin Sans', sans-serif;">Contact Me</div>
             <div class="text-banner">聯絡我</div>
             <a class="btn btn-outline-light" href="contact" role="button" style="position:absolute;top:250px;left:60px;">前往</a>
         </div>
@@ -165,29 +184,29 @@ II77?++===+++++++++++++++==~~:::~=++7$$ZZZZZ8ZZZOO8OZZ?I+??+???I+?++???+?+++++++
         </div>
     </div>
     <div style="margin-top:-16px;">
-            <div style="position:relative;">
-                <figure>
-                    <div class="img-effect">
-                        <img src="PHOTOS/clock.jpg" style="height:500px;width:99vw;object-fit: cover;">
-                    </div>
-                </figure>
-                <div class="title-banner" style="font-family: 'Raleway', sans-serif;">Clock</div>
-                <div class="text-banner">時鐘</div>
-                <a class="btn btn-outline-light" href="clock" role="button" style="position:absolute;top:250px;left:60px;">前往</a>
-            </div>
-        </div>
-        <div style="margin-top:-16px;">
-                <div style="position:relative;">
-                    <figure>
-                        <div class="img-effect">
-                            <img src="PHOTOS/sound.jpg" style="height:500px;width:99vw;object-fit: cover;">
-                        </div>
-                    </figure>
-                    <div class="title-banner2" style="font-family: 'Teko', sans-serif;">Soundboard</div>
-                    <div class="text-banner2"></div>
-                    <a class="btn btn-outline-light" href="sound" role="button" style="position:absolute;top:250px;right:60px;">前往</a>
+        <div style="position:relative;">
+            <figure>
+                <div class="img-effect">
+                    <img src="PHOTOS/clock.jpg" style="height:500px;width:99vw;object-fit: cover;">
                 </div>
-            </div>
+            </figure>
+            <div class="title-banner" style="font-family: 'Raleway', sans-serif;">Clock</div>
+            <div class="text-banner">時鐘</div>
+            <a class="btn btn-outline-light" href="clock" role="button" style="position:absolute;top:250px;left:60px;">前往</a>
+        </div>
+    </div>
+    <div style="margin-top:-16px;">
+        <div style="position:relative;">
+            <figure>
+                <div class="img-effect">
+                    <img src="PHOTOS/sound.jpg" style="height:500px;width:99vw;object-fit: cover;">
+                </div>
+            </figure>
+            <div class="title-banner2" style="font-family: 'Teko', sans-serif;">Soundboard</div>
+            <div class="text-banner2"></div>
+            <a class="btn btn-outline-light" href="sound" role="button" style="position:absolute;top:250px;right:60px;">前往</a>
+        </div>
+    </div>
 </body>
 
 </html>

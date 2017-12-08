@@ -3,7 +3,7 @@ overflow-x: hidden;
 }
 .parallax {
     /* The image used */
-    background-image: url("../PHOTOS/shoot.gif");
+    background-image: url("../PHOTOS/indexbg.jpg");
 
     /* Set a specific height */
     height: 1000px;
