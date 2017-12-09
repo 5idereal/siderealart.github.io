@@ -13,3 +13,21 @@ margin-top:-20px;
 .icon{
 font-size: 0.8em;
 }
+li {
+    list-style: none;
+  }
+  li:before {
+    /* For a round bullet */
+    content: '\2022';
+    /* For a square bullet */
+    /*content:'\25A0';*/
+    display: block;
+    position: relative;
+    max-width: 0;
+    max-height: 0;
+    left: -15px;
+    top: -3px;
+
+    color: rgb(109, 109, 109);
+    font-size: 25px;
+  }
