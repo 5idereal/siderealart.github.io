@@ -1,74 +1,73 @@
-body{
-overflow-x: hidden;
+body {
+    overflow-x: hidden;
 }
-.parallax {
-    /* The image used */
-    background-image: url("../PHOTOS/indexbg.jpg");
 
-    /* Set a specific height */
-    height: 1000px;
-
+#parallax {
+    background: url("../PHOTOS/indexbg.jpg") no-repeat 80% 30%;
+    height: 1100px;
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    width: 110vw;
+    margin-top: -50px;
+    margin-left: -20px;
+    margin-bottom: -50px;
 }
 
-.container{
-    position: relative;
-    text-align: center;
-    color: white;
+.bg {
+    width: 120%;
 }
-.centered{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.welcome {
+    color: white;
     font-family: 'Vibur', cursive;
-    font-size:20vmin;
+    font-size: 20vmin;
+    position: absolute !important;
+    margin-left: 31%;
+    margin-top: 18%;
 }
 
 .title-banner {
     position: absolute;
-    top:80px;
-    left:60px;
+    top: 80px;
+    left: 60px;
     font-family: 'Spectral SC', serif;
-    color:white;
+    color: white;
     font-size: 7vmin;
-
 }
+
 .title-banner2 {
     position: absolute;
-    top:80px;
+    top: 80px;
     font-family: 'Spectral SC', serif;
-    color:white;
+    color: white;
     font-size: 7vmin;
-right:60px;
+    right: 60px;
+}
 
-}
-.text-banner{
+.text-banner {
     position: absolute;
-    top:175px;
-    left:60px;
-    color:white;
+    top: 175px;
+    left: 60px;
+    color: white;
     font-size: 3vmin;
+}
 
-}
-.text-banner2{
+.text-banner2 {
     position: absolute;
-    top:175px;
-    right:60px;
-    color:white;
+    top: 175px;
+    right: 60px;
+    color: white;
     font-size: 3vmin;
-    right:60px;
+    right: 60px;
 }
-.img-effect{
-    max-width: 100%; 
+
+.img-effect {
+    max-width: 100%;
     width: 99vw;
     margin: auto;
-  }
-  
-  .img-effect::after {
+}
+
+.img-effect::after {
     display: block;
     position: relative;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0, rgba(65, 80, 47, 0.1));
@@ -76,19 +75,22 @@ right:60px;
     height: 500px;
     width: 100%;
     content: '';
-  }
+}
+
 figure img {
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
-  }
-  figure:hover img {
+}
+
+figure:hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-  }
-  figure {
-      width:99vw;
-      height:500px;
-      overflow:hidden;
-  }
+}
+
+figure {
+    width: 99vw;
+    height: 500px;
+    overflow: hidden;
+}
