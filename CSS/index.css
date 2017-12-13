@@ -94,3 +94,8 @@ figure {
     height: 500px;
     overflow: hidden;
 }
+.typed-cursor {
+    animation: blink 0.9s infinite;
+    font-weight: 100;
+    font-size: 20vmin;
+}

@@ -13,7 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <title>首頁</title>
-
+    <script src="JS/typed.min.js"></script>
 
 </head>
 <!--
@@ -43,10 +43,21 @@
     <div id="container">
         <div id="scene">
             <div id="parallax" data-depth="0.1"></div>
-            <p class="welcome" data-depth="0.3">Welcome!</p>
         </div>
     </div>
-
+    <div id="typed-strings">
+        <p>Hello </p>
+        <p>Welcome </p>
+        <p>Bonjour </p>
+        <p>Hola </p>
+        <p>Aloha </p>
+        <p>Ciao </p>
+        <p>Hej </p>
+        <p>Fuck you</p>
+    </div>
+    <div style="left:33%;position:absolute;z-index:200;color:white;top:20%;">
+        <span id="typed" style="font-size:20vmin;"></span>
+    </div>
     <div>
         <div style="position:relative;">
             <figure>
@@ -137,6 +148,16 @@
 
     <script>var scene = document.getElementById('scene');
         var parallaxInstance = new Parallax(scene);</script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            loop: true,
+            startDelay: 500,
+            typeSpeed: 70,
+            backSpeed: 100,
+        });
+    </script>
+
 </body>
 
 </html>
