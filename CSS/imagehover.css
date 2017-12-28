@@ -86,9 +86,8 @@
 .image01:hover .buttons .fa {
     opacity: 1;
 }
-
 .image02 {
-    max-width: 40%;
+    max-width: 35%;
     overflow: hidden;
     position: absolute;
     -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
@@ -96,7 +95,7 @@
     box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
     outline: 2px solid white;
     right: 20px;
-    top:800px;
+    top:950px;
 }
 .image02 img {
     max-width: 100%;
@@ -137,7 +136,7 @@
     transform: translate(-50%, -50%);
 }
 .image02 .buttons .fa {
-    background: white;
+    background: rgb(256, 256, 256);
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
@@ -183,7 +182,7 @@
     box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
     outline: 2px solid white;
     right: 20px;
-    top:1300px;
+    top:1750px;
 }
 .image03 img {
     max-width: 100%;
