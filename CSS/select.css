@@ -9,6 +9,7 @@ overflow: hidden;
     width: 33.3vw;
     margin: auto;
     height: 100vh;
+    z-index:-50;
   }
   
   .img-effect::after {
@@ -19,6 +20,7 @@ overflow: hidden;
     width: 100vw;
     content: '';
 margin-top:-100vh;
+ z-index:-50;
   }
 figure img {
     -webkit-transform: scale(1);
