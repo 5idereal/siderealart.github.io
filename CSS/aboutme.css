@@ -1,3 +1,45 @@
+
+#back-top {
+	position: fixed;
+	bottom: 30px;
+right:40px;
+}
+#back-top a {
+	height:88px;
+	width: 88px;
+	display: block;
+	text-align: center;
+	font: 13px/100% Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: rgba(122, 122, 122, 0.651);
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: rgb(112, 112, 112);
+}
+/* arrow icon (span tag) */
+#back-top span {
+	width: 88px;
+	height: 88px;
+	display: block;
+	margin-bottom: 7px;
+	background: rgba(170, 170, 170, 0.562) url(../top.png) no-repeat center center;
+	/* rounded corners */
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+
+}
+#back-top a:hover span {
+	background-color: rgba(165, 165, 165, 0.815);
+}
 .section {
     height: 100vh;
 }

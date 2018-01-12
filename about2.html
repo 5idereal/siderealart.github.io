@@ -15,9 +15,45 @@
     <link href="CSS/aos.css" rel="stylesheet">
     <link rel="icon" href="PHOTOS/profile.png" />
     <link rel="stylesheet" href="CSS/hover.css" />
+    <script>
+            
+            var html5_audiotypes={ 
+                "mp3": "audio/mpeg",
+                "mp4": "audio/mp4",
+                "ogg": "audio/ogg",
+                "wav": "audio/wav"
+            }
+            
+            function createsoundbite(sound){
+                var html5audio=document.createElement('audio')
+                if (html5audio.canPlayType){ 
+                    for (var i=0; i<arguments.length; i++){
+                        var sourceel=document.createElement('source')
+                        sourceel.setAttribute('src', arguments[i])
+                        if (arguments[i].match(/\.(\w+)$/i))
+                            sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+                        html5audio.appendChild(sourceel)
+                    }
+                    html5audio.load()
+                    html5audio.playclip=function(){
+                        html5audio.pause()
+                        html5audio.currentTime=0
+                        html5audio.play()
+                    }
+                    return html5audio
+                }
+                else{
+                    return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+                }
+            }
+            
+            var mouseoversound=createsoundbite("AUDIO/Bang.mp3")
+            </script>
+
 </head>
 
 <body>
+    <a name="top"></a>
 
     <nav id="cd-vertical-nav">
         <ul>
@@ -136,18 +172,18 @@
         <div id="bottom">
             <div id="imgfav">
 
-                <img src="PHOTOS/music.png" class="imgfav" data-aos="zoom-out"/>
-                <img src="PHOTOS/book.png" class="imgfav" data-aos="zoom-out"/>
-                <img src="PHOTOS/board-game.png" class="imgfav" data-aos="zoom-out"/>
-                <img src="PHOTOS/game.png" class="imgfav" data-aos="zoom-out"/>
-                <img src="PHOTOS/youtube.png" class="imgfav" data-aos="zoom-out"  />
+                <img src="PHOTOS/music.png" class="imgfav" data-aos="zoom-out" />
+                <img src="PHOTOS/book.png" class="imgfav" data-aos="zoom-out" />
+                <img src="PHOTOS/board-game.png" class="imgfav" data-aos="zoom-out" />
+                <img src="PHOTOS/game.png" class="imgfav" data-aos="zoom-out" />
+                <img src="PHOTOS/youtube.png" class="imgfav" data-aos="zoom-out" onmouseover="mouseoversound.playclip()" />
 
             </div>
             <div id="text1" data-aos="zoom-out">聽音樂</div>
             <div id="text2" data-aos="zoom-out">看小說</div>
             <div id="text3" data-aos="zoom-out">桌遊</div>
             <div id="text4" data-aos="zoom-out">電腦遊戲</div>
-            <div id="text5" data-aos="zoom-out">看影片</div>
+            <div id="text5" data-aos="zoom-out" >看影片</div>
         </div>
 
     </section>
@@ -157,14 +193,14 @@
         </div>
         <div id="bottom2">
             <div id="imgweb">
-                <a href="https://michalsnik.github.io/aos/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" >AOS</a>
-                <a href="https://mattboldt.com/demos/typed-js/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left"   data-aos-delay="50">Typed.js</a>
-                <a href="https://projects.lukehaas.me/scrollify/#home" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left"   data-aos-delay="100">Scrollify</a>
-                <a href="https://getbootstrap.com" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left"    data-aos-delay="150">Bootstrap</a>
-                <a href="https://jquery.com/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left"   data-aos-delay="200">Jquery</a>
-                <a href="https://fonts.google.com/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left"    data-aos-delay="250">Google Font</a>
-                <a href="http://fontawesome.io/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left"   data-aos-delay="300">Font Awesome</a>
-                <a href="https://picsum.photos/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left"   data-aos-delay="350">Picsum Photos</a>
+                <a href="https://michalsnik.github.io/aos/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left">AOS</a>
+                <a href="https://mattboldt.com/demos/typed-js/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="50">Typed.js</a>
+                <a href="https://projects.lukehaas.me/scrollify/#home" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="100">Scrollify</a>
+                <a href="https://getbootstrap.com" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="150">Bootstrap</a>
+                <a href="https://jquery.com/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="200">Jquery</a>
+                <a href="https://fonts.google.com/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="250">Google Font</a>
+                <a href="http://fontawesome.io/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="300">Font Awesome</a>
+                <a href="https://picsum.photos/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="350">Picsum Photos</a>
             </div>
         </div>
     </section>
@@ -199,7 +235,11 @@
             </a>
         </div>
     </section>
-
+    <p id="back-top">
+        <a href="#top">
+            <span></span>
+        </a>
+    </p>
     <script src="JS/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
@@ -225,7 +265,33 @@
             });
         });
     </script>
-
+    <script>
+            $(document).ready(function () {
+    
+                // hide #back-top first
+                $("#back-top").hide();
+    
+                // fade in #back-top
+                $(function () {
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 100) {
+                            $('#back-top').fadeIn();
+                        } else {
+                            $('#back-top').fadeOut();
+                        }
+                    });
+    
+                    // scroll body to 0px on click
+                    $('#back-top a').click(function () {
+                        $('body,html').animate({
+                            scrollTop: 0
+                        }, 800);
+                        return false;
+                    });
+                });
+    
+            });
+        </script>
     <script type="text/javascript">
         $(window).scroll(function () {
             var a = 900;
