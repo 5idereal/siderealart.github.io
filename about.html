@@ -2,188 +2,325 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
-  <title>關於我</title>
-  <link rel="stylesheet" href="CSS/about.css" />
-  <link rel="icon" href="PHOTOS/about_icon.png" />
-  <link rel="stylesheet" href="CSS/imagehover.css">
-  <link rel="stylesheet" href="CSS/font-awesome.min.css" />
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-    crossorigin="anonymous">
-  <script type="text/javascript">
-      if (screen.width <= 699) {
-      document.location = "mobile.html";
-    }
-  </script>
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Poiret+One');
-    a {
-      font-family: Microsoft JhengHei;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>關於我</title>
+    <link href="CSS/aboutme.css" rel="stylesheet">
+    <link href="CSS/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <script src="JS/modernizr.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="CSS/aos.css" rel="stylesheet">
+    <link rel="icon" href="PHOTOS/profile.png" />
+    <link rel="stylesheet" href="CSS/hover.css" />
+    <script type="text/javascript">
+        if (screen.width <= 699) {
+        document.location = "mobile.html";
+      }
+    </script>
+    <script>
+            
+            var html5_audiotypes={ 
+                "mp3": "audio/mpeg",
+                "mp4": "audio/mp4",
+                "ogg": "audio/ogg",
+                "wav": "audio/wav"
+            }
+            
+            function createsoundbite(sound){
+                var html5audio=document.createElement('audio')
+                if (html5audio.canPlayType){ 
+                    for (var i=0; i<arguments.length; i++){
+                        var sourceel=document.createElement('source')
+                        sourceel.setAttribute('src', arguments[i])
+                        if (arguments[i].match(/\.(\w+)$/i))
+                            sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+                        html5audio.appendChild(sourceel)
+                    }
+                    html5audio.load()
+                    html5audio.playclip=function(){
+                        html5audio.pause()
+                        html5audio.currentTime=0
+                        html5audio.play()
+                    }
+                    return html5audio
+                }
+                else{
+                    return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+                }
+            }
+            
+            var mouseoversound=createsoundbite("AUDIO/Bang.mp3")
+            </script>
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index">首頁</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="about">關於我
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact">聯絡我</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="test">測試</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="clock">時鐘</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="select">D&V Bookstore</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <span class="navbar-text">
-看三小
-    </span>
-  </nav>
-  <p id="title">關於我</p>
-  <p id="title2">About me</p>
-  <hr color="#7c7c7c" width="90%">
-  <br>
-  <p id="name">曹&nbsp;恩&nbsp;逢</p>
-  <div style="display:inline;">
-    <img src="PHOTOS/gemini.png" style="padding-left: 50px;padding-right:20px;height: 32px;display: inline;white-space: nowrap;"
-    />
-    <p class="texttitle">星座</p>
-    <br>
-    <p class="text">雙子</p>
-    <br>
-    <br>
+    <a name="top"></a>
 
-    <br>
-    <img src="PHOTOS/birthday.png" style="padding-left: 42px;padding-right:18px;height: 42px;display: inline;white-space: nowrap;"
-    />
-    <P class="texttitle">生日</P>
-    <br>
-    <p class="text">5月25日</p>
-    <br>
-    <br>
-    <br>
-    <img src="PHOTOS/drop.png" style="padding-left: 42px;padding-right:18px;height: 42px;display: inline;white-space: nowrap;"
-    />
-    <p class="texttitle">血型</p>
-    <br>
-    <p class="text">O</p>
-    <br>
-    <br>
-    <img src="PHOTOS/horse.png" style="padding-left: 42px;padding-right:18px;height: 42px;display: inline;white-space: nowrap;"
-    />
-    <P class="texttitle">生肖</P>
-    <br>
-    <p class="text">馬</p>
-    <br>
-    <br>
-    <br>
-    <img src="PHOTOS/sex.png" style="padding-left: 42px;padding-right:18px;height: 42px;display: inline;white-space: nowrap;"
-    />
-    <p class="texttitle">性別</p>
+    <nav id="cd-vertical-nav">
+        <ul>
+            <li>
+                <a href="#section1" data-number="1">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">頂端</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section2" data-number="2">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section3" data-number="3">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">喜好</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section4" data-number="4">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">厭惡</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section5" data-number="5">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">使用</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section6" data-number="6">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">聯絡我</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="typed-strings">
+        <p>Hello </p>
+        <p>Welcome </p>
+        <p>Bonjour </p>
+        <p>Hola </p>
+        <p>Aloha </p>
+        <p>Ciao </p>
+        <p>Hej </p>
+        <p> Здравей</p>
+        <p>Γεια σου</p>
+        <p>नमस्ते</p>
+        <p>こんにちは</p>
+        <p> 안녕하세요</p>
+    </div>
 
-    <br>
-    <p class="text">男</p>
-    <br>
-    <br>
-    <br>
-    <img src="PHOTOS/home.png" style="padding-left: 42px;padding-right:18px;height: 42px;display: inline;white-space: nowrap;"
-    />
-    <p class="texttitle">出生地</p>
-    <br>
-    <p class="text">新北市新莊</p>
-    <br>
-    <br>
-    <br>
-    <img src="PHOTOS/height.png" style="padding-left: 42px;padding-right:18px;height: 42px;display: inline;white-space: nowrap;"
-    />
-    <p class="texttitle">身高</p>
-    <br>
-    <p class="text">183公分</p>
-    <br>
-    <br>
-    <br>
-    <img src="PHOTOS/location.png" style="padding-left: 42px;padding-right:18px;height: 42px;display: inline;white-space: nowrap;"
-    />
-    <p class="texttitle">工作</p>
-    <br>
-    <p class="text">在大安高工擔任學生</p>
-  </div>
-  <div class="image01">
-    <img src="PHOTOS/1.jpeg">
-    <div class="ovrly"></div>
-    <div class="buttons">
-      <a href="#" class="fa fa-link"></a>
-      <a href="#" class="fa fa-search"></a>
-    </div>
-  </div>
-  <div class="image02">
-    <img src="PHOTOS/2.jpeg">
-    <div class="ovrly"></div>
-    <div class="buttons">
-      <a href="#" class="fa fa-link"></a>
-      <a href="#" class="fa fa-search"></a>
-    </div>
-  </div>
-  <div class="image03">
-    <img src="PHOTOS/3.gif">
-    <div class="ovrly"></div>
-    <div class="buttons">
-      <a href="#" class="fa fa-link"></a>
-      <a href="#" class="fa fa-search"></a>
-    </div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+    <section id="section1" class="main-section cd-section scrollsec">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top:0px;padding-bottom:0px;">
+            <span class="navbar-brand mb-0 h1" style="font-family: Microsoft JhengHei;font-size:2.5vmin;" data-aos="fade-right">
+                <img src="PHOTOS/avatar.png" width="25" height="25" class="d-inline-block align-top" style="margin-top:5px;margin-right:10px;margin-bottom:10px;"
+                    data-aos="fade-down">關於我</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active ">
+                        <a class="nav-link headerlink hvr-wobble-horizontal" href="" data-aos="fade-right">首頁
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headerlink hvr-wobble-horizontal" href="" data-aos="fade-right">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <span id="typed" style="font-size:20vmin;color:white;z-index:20;position:absolute;left:35%;margin-top:8%;"></span>
+    </section>
+    <section id="section2" class="cd-section section scrollsec">
+        <div id="article" data-aos="fade-right">Eat imagine you chiefly few end ferrars compass. Be visitor females am ferrars inquiry. Latter law remark two lively
+            thrown.
+            <strong>Spot set they know rest its. Raptures law diverted believed jennings consider children the see. </strong>Had
+            invited beloved carried the colonel. Occasional principles discretion it as he unpleasing boisterous. She bed
+            sing dear now son half. View fine me gone this name an rank. Compact greater and demands mrs the parlors. Park
+            be fine easy am size away. Him and fine bred knew. At of hardly sister favour. As society explain country raising
+            weather of. Sentiments nor everything off out uncommonly partiality bed. For though result and talent add are
+            parish valley. Songs in oh other avoid it hours woman style. In myself family as if be agreed. Gay collected
+            son him knowledge delivered put. Added would end ask sight and asked saw dried house. Property expenses yourself
+            occasion endeavor two may judgment she. Me of soon rank be most head time tore. Colonel or passage to ability.
+            Carried nothing on am warrant towards. Polite in of in oh needed itself silent course. Assistance travelling
+            so especially do prosperous appearance mr no celebrated. Wanted easily in my called formed suffer. Songs hoped
+            sense as taken ye mirth at. Believe fat how six drawing pursuit minutes far. Same do seen head am part it dear
+            open to. Whatever may scarcely judgment had. Same an quit most an. Admitting an mr disposing sportsmen. Tried
+            on cause no spoil arise plate. Longer ladies valley get esteem use led six. Middletons resolution advantages
+            expression themselves partiality so me at. West none hope if sing oh sent tell is. Yet bed any for travelling
+            assistance indulgence unpleasing.
+        </div>
+        <div id="vline"></div>
+        <div class="image01" data-aos="flip-up">
+            <img src="https://picsum.photos/700/1000/?random" class="image">
+            <div class="ovrly"></div>
+            <div class="buttons">
+                <a href="https://picsum.photos" class="fa fa-link"></a>
+                <a href="https://cdn2.ettoday.net/images/2471/2471912.jpg" class="fa fa-search"></a>
+            </div>
+        </div>
+    </section>
+    <section id="section3" class="cd-section section scrollsec">
 
-  <a href="Genji.ogg" download="ULT">
-    <img src="icon-genji.png" style="height:20px;" />
-  </a>
+
+        <div id="top">
+            <p id="titlefav">我喜歡</p>
+        </div>
+        <div id="bottom">
+            <div id="imgfav">
+
+                <img src="PHOTOS/music.png" class="imgfav" data-aos="zoom-out" />
+                <img src="PHOTOS/book.png" class="imgfav" data-aos="zoom-out" />
+                <img src="PHOTOS/board-game.png" class="imgfav" data-aos="zoom-out" />
+                <img src="PHOTOS/game.png" class="imgfav" data-aos="zoom-out" />
+                <img src="PHOTOS/youtube.png" class="imgfav" data-aos="zoom-out" onmouseover="mouseoversound.playclip()" />
+
+            </div>
+            <div id="text1" data-aos="zoom-out">聽音樂</div>
+            <div id="text2" data-aos="zoom-out">看小說</div>
+            <div id="text3" data-aos="zoom-out">桌遊</div>
+            <div id="text4" data-aos="zoom-out">電腦遊戲</div>
+            <div id="text5" data-aos="zoom-out" >看影片</div>
+        </div>
+
+    </section>
+    <section id="section4" class="cd-section section scrollsec">
+        <div id="top2">
+            <p id="titlefav">這個網站用了</p>
+        </div>
+        <div id="bottom2">
+            <div id="imgweb">
+                <a href="https://michalsnik.github.io/aos/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left">AOS</a>
+                <a href="https://mattboldt.com/demos/typed-js/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="50">Typed.js</a>
+                <a href="https://projects.lukehaas.me/scrollify/#home" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="100">Scrollify</a>
+                <a href="https://getbootstrap.com" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="150">Bootstrap</a>
+                <a href="https://jquery.com/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="200">Jquery</a>
+                <a href="https://fonts.google.com/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="250">Google Font</a>
+                <a href="http://fontawesome.io/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="300">Font Awesome</a>
+                <a href="https://picsum.photos/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="350">Picsum Photos</a>
+            </div>
+        </div>
+    </section>
+    <section id="section5" class="cd-section section scrollsec">
+        <div id="top2">
+            <p id="titlefav">我不喜歡</p>
+        </div>
+        <div id="bottom2">
+            <div id="text1" data-aos="zoom-out">你</div>
+            <a href="Genji.ogg" download="ULT">
+                <img src="icon-genji.png" style="height:30px;" />
+              </a>
+        </div>
+
+    </section>
+    <section id="section6" class="cd-section section scrollsec">
+        <div id="left">
+            <p id="title-c">聯絡我</p>
+            <p id="title-e">Contact me</p>
+        </div>
+        <div id="right">
+            <a href="https://www.facebook.com/SiderealArt">
+                <img src="PHOTOS/facebook.png" class="contact-icon" data-aos="fade-down" />
+            </a>
+            <a href="https://www.instagram.com/enfong_tsao/">
+                <img src="PHOTOS/instagram.png" class="contact-icon" data-aos="fade-down" data-aos-delay="100" />
+            </a>
+            <a href="mailto:nelson22768384@gmail.com">
+                <img src="PHOTOS/gmail.png" class="contact-icon" data-aos="fade-down" data-aos-delay="200" />
+            </a>
+            <a href="https://plus.google.com/+曹恩逢?hl=zh-TW">
+                <img src="PHOTOS/google-plus.png" class="contact-icon" data-aos="fade-down" data-aos-delay="300" />
+            </a>
+            <a href="https://twitter.com/SiderealArt">
+                <img src="PHOTOS/twitter.png" class="contact-icon" data-aos="fade-down" data-aos-delay="400" />
+            </a>
+        </div>
+    </section>
+    <p id="back-top">
+        <a href="#top">
+            <span></span>
+        </a>
+    </p>
+    <script src="JS/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/jquery.scrollify.js"></script>
+    <script src="JS/typed.min.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            loop: true,
+            startDelay: 500,
+            typeSpeed: 70,
+            backSpeed: 100,
+        });
+    </script>
+    <script>
+        $(function () {
+            $.scrollify({
+                section: ".scrollsec",
+                scrollSpeed: 900,
+            });
+        });
+    </script>
+    <script>
+            $(document).ready(function () {
+    
+                // hide #back-top first
+                $("#back-top").hide();
+    
+                // fade in #back-top
+                $(function () {
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 100) {
+                            $('#back-top').fadeIn();
+                        } else {
+                            $('#back-top').fadeOut();
+                        }
+                    });
+    
+                    // scroll body to 0px on click
+                    $('#back-top a').click(function () {
+                        $('body,html').animate({
+                            scrollTop: 0
+                        }, 800);
+                        return false;
+                    });
+                });
+    
+            });
+        </script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var a = 900;
+            var pos = $(window).scrollTop();
+            if (pos > a) {
+                $(".no-touch #cd-vertical-nav .cd-label").css({
+                    "color": "#000000",
+                });
+            }
+            else {
+                $(".no-touch #cd-vertical-nav .cd-label").css({
+                    "color": "#FFFFFF",
+                });
+            }
+        });
+    </script>
+    <script>
+        AOS.init({
+        });
+    </script>
 
 </body>
 
