@@ -16,75 +16,94 @@
 <body>
     <p class="title">長句</p>
     <hr width="95%" style="margin:auto; border-top:1px rgb(170, 170, 170) solid;padding-bottom:20px;" />
-    <div class="buttons1">
-        <audio id="player" src="AUDIO/youdone.ogg"></audio>
-        <div>
-            <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;position:absolute;color:white;left:50px;line-height: 4.5vmin;" onclick="document.getElementById('player').play()">錄夠了沒啊</a>
-        </div>
-        <audio id="player2" src="AUDIO/stoprecording.ogg"></audio>
-        <div>
-            <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;position:relative;color:white;left:180px;line-height: 4.5vmin;" onclick="document.getElementById('player2').play()">不要再錄了啦</a>
-        </div>
-        <audio id="player3" src="AUDIO/imrecording.ogg"></audio>
-        <div>
-            <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;position:absolute;color:white;line-height: 4.5vmin;left:310px;" onclick="document.getElementById('player3').play()">我要錄影</a>
-        </div>
-        <audio id="player5" src="AUDIO/iknow.ogg"></audio>
-        <div>
-            <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;position:absolute;color:white;line-height: 4.5vmin;" onclick="document.getElementById('player5').play()">我知道</a>
-        </div>
-        <audio id="player11" src="AUDIO/norecording.ogg"></audio>
-        <div>
-            <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;position:absolute;color:white;line-height: 4.5vmin;" onclick="document.getElementById('player11').play()">你不要拍</a>
-        </div>
-        <audio id="player12" src="AUDIO/smash.ogg"></audio>
-        <div>
-            <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;position:absolute;color:white;line-height: 4.5vmin;" onclick="document.getElementById('player12').play()">我砸你喔</a>
-        </div>
-        <audio id="player15" src="AUDIO/dead.ogg"></audio>
-        <div>
-            <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;position:relative;color:white;right:0px;line-height: 4.5vmin;" onclick="document.getElementById('player15').play()">死定了</a>
-        </div>
+    <div class="buttonsgroup">
+        <audio id="youdone" src="AUDIO/youdone.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('youdone').play()">錄夠了沒啊</a>
+
+        <audio id="stoprecording" src="AUDIO/stoprecording.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('stoprecording').play()">不要再錄了啦</a>
+
+        <audio id="imrecording" src="AUDIO/imrecording.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('imrecording').play()">我要錄影</a>
+
+        <audio id="iknow" src="AUDIO/iknow.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('iknow').play()">我知道</a>
+
+        <audio id="norecording" src="AUDIO/norecording.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('norecording').play()">你不要拍</a>
+
+        <audio id="smash" src="AUDIO/smash.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('smash').play()">我砸你喔</a>
+
+        <audio id="dead" src="AUDIO/dead.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('dead').play()">死定了</a>
     </div>
+
     <p class="title">短句</p>
     <hr width="95%" style="margin:auto; border-top:1px rgb(156, 156, 156) solid;padding-bottom:20px;" />
-    <audio id="player8" src="AUDIO/OK.ogg"></audio>
-    <div>
-        <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;color:white;line-height: 4.5vmin;" onclick="document.getElementById('player8').play()">好啦</a>
+    <div class="buttonsgroup">
+        <audio id="OK" src="AUDIO/OK.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('OK').play()">好啦</a>
+
+        <audio id="thx" src="AUDIO/thx.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('thx').play()">謝謝</a>
+
+        <audio id="REALOK" src="AUDIO/REALOK.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('REALOK').play()">OK</a>
+
+        <audio id="goaway" src="AUDIO/goaway.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('goaway').play()">走開</a>
+
+        <audio id="what" src="AUDIO/what.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('what').play()">怎樣</a>
+
+        <audio id="moo" src="AUDIO/moo.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('moo').play()">母湯(遲緩)</a>
+
+        <audio id="moo2" src="AUDIO/moo2.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('moo2').play()">母湯(懷疑)</a>
+
+        <audio id="moo3" src="AUDIO/moo3.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('moo3').play()">母湯喔</a>
+
+        <audio id="moo4" src="AUDIO/moo4.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('moo4').play()">母湯喔(激動)</a>
     </div>
-    <audio id="player9" src="AUDIO/thx.ogg"></audio>
-    <div>
-        <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;color:white;line-height: 4.5vmin;" onclick="document.getElementById('player9').play()">謝謝</a>
-    </div>
-    <audio id="player10" src="AUDIO/REALOK.ogg"></audio>
-    <div>
-        <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;color:white;line-height: 4.5vmin;" onclick="document.getElementById('player10').play()">OK</a>
-    </div>
-    <audio id="player13" src="AUDIO/goaway.ogg"></audio>
-    <div>
-        <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;color:white;line-height: 4.5vmin;" onclick="document.getElementById('player13').play()">走開</a>
-    </div>
+
     <p class="title">嘆詞</p>
     <hr width="95%" style="margin:auto; border-top:1px rgb(156, 156, 156) solid;padding-bottom:20px;" />
-    <audio id="player4" src="AUDIO/WOW.ogg"></audio>
-    <div>
-        <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;color:white;line-height: 4.5vmin;" onclick="document.getElementById('player4').play()">哇賽</a>
+    <div class="buttonsgroup">
+        <audio id="eww" src="AUDIO/eww.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('eww').play()">噁</a>
+
+        <audio id="WOW" src="AUDIO/WOW.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('WOW').play()">哇賽</a>
     </div>
+    
     <p class="title">形容詞</p>
     <hr width="95%" style="margin:auto; border-top:1px rgb(156, 156, 156) solid;padding-bottom:20px;" />
-    <audio id="player6" src="AUDIO/fine.ogg"></audio>
-    <div>
-        <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;color:white;line-height: 4.5vmin;" onclick="document.getElementById('player6').play()">好</a>
+    <div class="buttonsgroup">
+        <audio id="no" src="AUDIO/no.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('no').play()">不行</a>
+
+        <audio id="fine" src="AUDIO/fine.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('fine').play()">好</a>
     </div>
-    <audio id="player7" src="AUDIO/no.ogg"></audio>
-    <div>
-        <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;color:white;line-height: 4.5vmin;" onclick="document.getElementById('player7').play()">不行</a>
-    </div>
+
     <p class="title">主詞</p>
     <hr width="95%" style="margin:auto; border-top:1px rgb(156, 156, 156) solid;padding-bottom:20px;" />
-    <audio id="player14" src="AUDIO/you.ogg"></audio>
-    <div>
-        <a class="btn btn-primary" style="width:200px;height:60px;font-size:2vmin;color:white;line-height: 4.5vmin;" onclick="document.getElementById('player14').play()">你</a>
+    <div class="buttonsgroup">
+        <audio id="you" src="AUDIO/you.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('you').play()">你</a>
+
+        <audio id="bold" src="AUDIO/bold.ogg"></audio>
+        <a class="btn btn-primary button" onclick="document.getElementById('bold').play()">光頭哥哥</a>
+    </div>
+    <p class="title">動詞</p>
+    <hr width="95%" style="margin:auto; border-top:1px rgb(156, 156, 156) solid;padding-bottom:20px;" />
+    <div class="buttonsgroup">
+            <audio id="SM" src="AUDIO/SM.ogg"></audio>
+            <a class="btn btn-primary button" onclick="document.getElementById('SM').play()">SM</a>
     </div>
 </body>
 
