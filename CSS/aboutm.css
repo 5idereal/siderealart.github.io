@@ -8,7 +8,34 @@
     height: 100vh;
     overflow:hidden;
 }
+#title-e{
+text-align: center;
+font-family: Microsoft JhengHei;
+font-size: 10vmin;
+color: white;
+z-index: 20;
+top:42%;
+white-space:nowrap;
+}
 
+#title-c{
+    text-align: center;
+    font-family: Microsoft JhengHei;
+    font-size: 5vmin;
+    color: rgb(184, 184, 184);
+    z-index: 21;
+}
+#title-line{
+border-bottom:1px solid #ffffff;
+width:20vw;
+top:46.5%;
+position: absolute;
+left:40%;
+z-index: 22;
+}
+#article{
+    font-size:2vmin;
+}
 .main-section::after {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.596) 0, rgba(112, 112, 112, 0.3));
     display: block;
