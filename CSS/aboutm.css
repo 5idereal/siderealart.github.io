@@ -15,7 +15,7 @@ font-size: 10vmin;
 color: white;
 z-index: 20;
 top:42%;
-white-space:nowrap;
+
 }
 
 #title-c{
@@ -34,7 +34,7 @@ left:40%;
 z-index: 22;
 }
 #article{
-    font-size:2vmin;
+    font-size:3vmin;
 }
 .main-section::after {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.596) 0, rgba(112, 112, 112, 0.3));
