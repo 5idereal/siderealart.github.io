@@ -2,8 +2,67 @@
     width: 80vw;
     height: auto;
     margin-left:10%;
+    padding-bottom:5%;
 }
-
+.top{
+    width:100vw;
+    height:15vh;
+    background-color: rgb(0, 255, 170);
+}
+.bottom{
+    width:100vw;
+    height:120vh;
+    background-color: #80ffd9;
+    text-align: center;
+}
+.top2{
+    width:100vw;
+    height:15vh;
+    background-color: rgb(255, 149, 145);
+}
+.bottom2{
+    width:100vw;
+    height:120vh;
+    background-color: #ffa7a7;
+    text-align: center;
+}
+.top3{
+    width:100vw;
+    height:50vh;
+    background-color: #84a5ff;
+}
+.bottom3{
+    width:100vw;
+    height:50vh;
+    background-color: #aeadff;
+}
+#contacttitle-e{
+font-size: 4vmin;
+font-family: Microsoft JhengHei;
+margin-top:-35%;
+}
+#contacttitle-c{
+font-size: 9vmin;
+margin-top:-45%;
+font-family: Microsoft JhengHei;
+}
+.contact-icon{
+    width:14vw;
+    height:auto;
+    margin-left:5%;
+    margin-top:35%;
+}
+.imgfav{
+    width:25vw;
+    height:auto;
+}
+.favbox{
+    padding-top:5%;
+}
+.imgtext{
+    font-size: 5vmin !important;
+    font-family: Microsoft JhengHei !important;
+}
 .main-section {
     background-image: url('https://i.imgur.com/kJb4iqP.jpg');
     background-attachment: fixed;
@@ -13,7 +72,12 @@
     height: 100vh;
     overflow: hidden;
 }
-
+#titlefav{
+    font-size:10vmin;
+    top:5.5%;
+    font-family: Microsoft JhengHei;
+    color:rgb(65, 65, 65);
+}
 #title-e {
     text-align: center;
     font-family: Microsoft JhengHei;
