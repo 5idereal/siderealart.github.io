@@ -99,21 +99,6 @@
             </li>
         </ul>
     </nav>
-    <div id="typed-strings">
-        <p>Hello </p>
-        <p>Welcome </p>
-        <p>Bonjour </p>
-        <p>Hola </p>
-        <p>Aloha </p>
-        <p>Ciao </p>
-        <p>Hej </p>
-        <p> Здравей</p>
-        <p>Γεια σου</p>
-        <p>नमस्ते</p>
-        <p>こんにちは</p>
-        <p> 안녕하세요</p>
-    </div>
-
     <section id="section1" class="main-section cd-section scrollsec">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top:0px;padding-bottom:0px;">
             <span class="navbar-brand mb-0 h1" style="font-family: Microsoft JhengHei;font-size:2.5vmin;" data-aos="fade-right">
@@ -136,7 +121,9 @@
                 </ul>
             </div>
         </nav>
-        <span id="typed" style="font-size:20vmin;color:white;z-index:20;position:absolute;left:35%;margin-top:8%;"></span>
+        <p id="title-e">About Me</p>
+        <div id="title-line"></div>
+        <p id="title-c">關於我</p>
     </section>
     <section id="section2" class="cd-section section scrollsec">
         <div id="article" data-aos="fade-right">Eat imagine you chiefly few end ferrars compass. Be visitor females am ferrars inquiry. Latter law remark two lively
@@ -159,7 +146,7 @@
         </div>
         <div id="vline"></div>
         <div class="image01" data-aos="flip-up">
-            <img src="https://picsum.photos/700/1000/?random" class="image">
+            <img src="https://i.imgur.com/MogQmWS.jpg" class="image">
             <div class="ovrly"></div>
             <div class="buttons">
                 <a href="https://picsum.photos" class="fa fa-link"></a>
@@ -212,15 +199,14 @@
                         <a href="https://jquery.com/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="200">Jquery</a>
                         <a href="https://fonts.google.com/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="250">Google Font</a>
                         <a href="http://fontawesome.io/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="300">Font Awesome</a>
-                        <a href="https://picsum.photos/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="350">Picsum Photos</a>
                         <a href="http://ianlunn.github.io/Hover/" class="imgweb btn btn-lg btn-outline-dark" data-aos="flip-left" data-aos-delay="400">Hover.css</a>
                     </div>
                 </div>
     </section>
     <section id="section6" class="cd-section section scrollsec">
         <div id="left">
-            <p id="title-c">聯絡我</p>
-            <p id="title-e">Contact me</p>
+            <p id="contacttitle-c">聯絡我</p>
+            <p id="contacttitle-e">Contact me</p>
         </div>
         <div id="right">
             <a href="https://www.facebook.com/SiderealArt">
@@ -251,16 +237,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="JS/main.js"></script>
     <script src="JS/jquery.scrollify.js"></script>
-    <script src="JS/typed.min.js"></script>
-    <script>
-        var typed = new Typed('#typed', {
-            stringsElement: '#typed-strings',
-            loop: true,
-            startDelay: 500,
-            typeSpeed: 70,
-            backSpeed: 100,
-        });
-    </script>
     <script>
         $(function () {
             $.scrollify({

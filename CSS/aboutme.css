@@ -123,14 +123,14 @@ background-color: #ffdcdc;
     height:72vh;
     width:100vw;
 }
-#title-c{
+#contacttitle-c{
 position:relative;
 top:40%;
 font-family: Microsoft JhengHei;
 color:white;
 font-size:8vmin;
 }
-#title-e{
+#contacttitle-e{
     position:relative;
     top:40%;
     color:white;
@@ -157,6 +157,30 @@ height:auto;
     margin-right: 2%;
     font-family: 'Libre Baskerville', serif;
     font-size: 1.7vmin;
+}
+#title-e {
+    text-align: center;
+    font-family: Microsoft JhengHei;
+    font-size: 10vmin;
+    color: white;
+    z-index: 20;
+    top: 35%;
+}
+#title-line {
+    border-bottom: 1px solid #ffffff;
+    width: 20vw;
+    top: 43%;
+    position: absolute;
+    left: 40%;
+    z-index: 22;
+}
+
+#title-c {
+    text-align: center;
+    font-family: Microsoft JhengHei;
+    font-size: 5vmin;
+    color: rgb(184, 184, 184);
+    z-index: 21;
 }
 
 #titlefav{
@@ -208,7 +232,6 @@ left:5%;
     position: relative;
     height: 100vh;
     content: '';
-    margin-top: -25px;
 }
 
 .image01 {
