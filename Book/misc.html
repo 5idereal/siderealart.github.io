@@ -1,323 +1,353 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Misc</title>
-  <link rel="stylesheet" href="../CSS/misc.css">
-  <script src="../JS/jquery-3.2.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Misc</title>
+    <link href="../CSS/misc.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000000">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="../index">首頁</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../about">關於我</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../contact">聯絡我</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../test">測試</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../clock">時鐘</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="../select">回去
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
+    <div id="mainNavigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:rgb(173, 234, 255) !important;">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="titlebox">
+            <p id="title-c">雜項</p>
+            <p id="title-e">Misc.</p>
+        </div>
     </div>
-    <span class="navbar-text">
-      D&V Bookstore
-    </span>
-  </nav>
-  <div class="parallax"></div>
-  <div class="container centered">雜項</div>
-  <div class="container centered2">Misc</div>
+    <div id="otherContent">
+        <div class="bookcover">
+            <img src="Pages/BP1.jpg" alt="Book" class="image">
+            <div class="parentdiv">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#BP" style="opacity:1 !important;z-index:32;top:50px;position: absolute;">閱讀</button>
+                <!-- Modal -->
+                <div class="modal fade" id="BP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <img src="Pages/BP1.jpg" class="pageimg" />
+                                    <img src="Pages/BP2.jpg" class="pageimg" />
+                                    <img src="Pages/BP3.jpg" class="pageimg" />
+                                    <img src="Pages/BP4.jpg" class="pageimg" />
+                                    <img src="Pages/BP5.jpg" class="pageimg" />
+                                    <img src="Pages/BP6.jpg" class="pageimg" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="booktitle">新書預告</p>
+                <div class="overlay"></div>
 
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    閱讀
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">新書預告</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+            </div>
         </div>
-        <div class="modal-body">
-          <img src="Pages/BP1.jpg" class="pageimg" />
-          <img src="Pages/BP2.jpg" class="pageimg" />
-          <img src="Pages/BP3.jpg" class="pageimg" />
-          <img src="Pages/BP4.jpg" class="pageimg" />
-          <img src="Pages/BP5.jpg" class="pageimg" />
-          <img src="Pages/BP6.jpg" class="pageimg" />
+        <div class="bookcover">
+            <img src="Pages/2BP1.jpg" alt="Book" class="image">
+            <div class="parentdiv">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#2BP" style="opacity:1 !important;z-index:32;top:50px;position: absolute;">閱讀</button>
+                <!-- Modal -->
+                <div class="modal fade" id="2BP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <img src="Pages/2BP1.jpg" class="pageimg" />
+                                    <img src="Pages/2BP2.jpg" class="pageimg" />
+                                    <img src="Pages/2BP3.jpg" class="pageimg" />
+                                    <img src="Pages/2BP4.jpg" class="pageimg" />
+                                    <img src="Pages/2BP5.jpg" class="pageimg" />
+                                    <img src="Pages/2BP6.jpg" class="pageimg" />
+                                    <img src="Pages/2BP7.jpg" class="pageimg" />
+                                    <img src="Pages/2BP8.jpg" class="pageimg" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="booktitle">新書預告2</p>
+                <div class="overlay"></div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+        <div class="bookcover">
+            <img src="Pages/FB1.jpg" alt="Book" class="image">
+            <div class="parentdiv">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#FB" style="opacity:1 !important;z-index:32;top:50px;position: absolute;">閱讀</button>
+                <!-- Modal -->
+                <div class="modal fade" id="FB" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <img src="Pages/FB1.jpg" class="pageimg" />
+                                    <img src="Pages/FB2.jpg" class="pageimg" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="booktitle">Fakebook</p>
+                <div class="overlay"></div>
+            </div>
         </div>
-      </div>
+        <div class="bookcover">
+            <img src="Pages/2TACSd1.jpg" alt="Book" class="image">
+            <div class="parentdiv">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#2TACSd" style="opacity:1 !important;z-index:32;top:50px;position: absolute;">閱讀</button>
+                <!-- Modal -->
+                <div class="modal fade" id="2TACSd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <img src="Pages/2TACSd1.jpg" class="pageimg" />
+                                    <img src="Pages/2TACSd2.jpg" class="pageimg" />
+                                    <img src="Pages/2TACSd3.jpg" class="pageimg" />
+                                    <img src="Pages/2TACSd4.jpg" class="pageimg" />
+                                    <img src="Pages/2TACSd5.jpg" class="pageimg" />
+                                    <img src="Pages/2TACSd6.jpg" class="pageimg" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="booktitle">生氣氰化物2 Demo</p>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="bookcover">
+            <img src="https://i.imgur.com/uLWVzDA.jpg" alt="Book" class="image">
+            <div class="parentdiv">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#BirthdayCard" style="opacity:1 !important;z-index:32;top:50px;position: absolute;">閱讀</button>
+                <!-- Modal -->
+                <div class="modal fade" id="BirthdayCard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <img src="https://i.imgur.com/uLWVzDA.jpg" class="pageimg" />
+                                    <img src="https://i.imgur.com/BtzSn4h.jpg" class="pageimg" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="booktitle">生日卡片</p>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="bookcover">
+            <img src="https://i.imgur.com/Y5j2GbE.jpg" alt="Book" class="image">
+            <div class="parentdiv">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#3D" style="opacity:1 !important;z-index:32;top:50px;position: absolute;">閱讀</button>
+                <!-- Modal -->
+                <div class="modal fade" id="3D" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <img src="https://i.imgur.com/Y5j2GbE.jpg" class="pageimg" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="booktitle">3D</p>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="bookcover">
+            <img src="https://i.imgur.com/IiwtfIu.jpg" alt="Book" class="image">
+            <div class="parentdiv">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#WTF" style="opacity:1 !important;z-index:32;top:50px;position: absolute;">閱讀</button>
+                <!-- Modal -->
+                <div class="modal fade" id="WTF" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <img src="https://i.imgur.com/IiwtfIu.jpg" class="pageimg" />
+                                    <img src="https://i.imgur.com/9rQR85s.jpg" class="pageimg" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="booktitle">字</p>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="bookcover">
+            <img src="https://i.imgur.com/Zgfd5xc.jpg" alt="Book" class="image">
+            <div class="parentdiv">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#McDonald" style="opacity:1 !important;z-index:32;top:50px;position: absolute;">閱讀</button>
+                <!-- Modal -->
+                <div class="modal fade" id="McDonald" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document"  style="max-width:700px !important;">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <img src="https://i.imgur.com/Zgfd5xc.jpg" class="pageimg" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="booktitle">McDonald</p>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="bookcover">
+            <img src="https://i.imgur.com/vGR6sGV.jpg" alt="Book" class="image">
+            <div class="parentdiv">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#Sorry" style="opacity:1 !important;z-index:32;top:50px;position: absolute;">閱讀</button>
+                <!-- Modal -->
+                <div class="modal fade" id="Sorry" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document" style="max-width:800px !important;">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <img src="https://i.imgur.com/vGR6sGV.jpg" class="pageimg" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="booktitle">Sorry</p>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="bookcover">
+            <img src="https://i.imgur.com/0mDiPwr.jpg" alt="Book" class="image">
+            <div class="parentdiv">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#hmmmmm" style="opacity:1 !important;z-index:32;top:50px;position: absolute;">閱讀</button>
+                <!-- Modal -->
+                <div class="modal fade" id="hmmmmm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document" style="max-width:900px !important;">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                    <img src="https://i.imgur.com/0mDiPwr.jpg" class="pageimg" />
+                                    <img src="https://i.imgur.com/Iajg3t6.jpg" class="pageimg" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="booktitle">WTF</p>
+                <div class="overlay"></div>
+            </div>
+        </div>
     </div>
-  </div>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#BP2">
-    閱讀
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="BP2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="BP2">新書預告</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="Pages/2BP1.jpg" class="pageimg" />
-          <img src="Pages/2BP2.jpg" class="pageimg" />
-          <img src="Pages/2BP3.jpg" class="pageimg" />
-          <img src="Pages/2BP4.jpg" class="pageimg" />
-          <img src="Pages/2BP5.jpg" class="pageimg" />
-          <img src="Pages/2BP6.jpg" class="pageimg" />
-          <img src="Pages/2BP7.jpg" class="pageimg" />
-          <img src="Pages/2BP8.jpg" class="pageimg" />
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ampleModal">
-    閱讀
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="ampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">FakeBook</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="Pages/FB1.jpg" class="pageimg" />
-          <img src="Pages/FB2.jpg" class="pageimg" />
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mpleModal">
-    閱讀
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="mpleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">我懶得幫一個只有6頁的書創網頁</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="Pages/2TACSd1.jpg" class="pageimg" />
-          <img src="Pages/2TACSd2.jpg" class="pageimg" />
-          <img src="Pages/2TACSd3.jpg" class="pageimg" />
-          <img src="Pages/2TACSd4.jpg" class="pageimg" />
-          <img src="Pages/2TACSd5.jpg" class="pageimg" />
-          <img src="Pages/2TACSd6.jpg" class="pageimg" />
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pleModal">
-    閱讀
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="pleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">生日卡片</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="https://i.imgur.com/uLWVzDA.jpg" class="pageimg" />
-          <img src="https://i.imgur.com/BtzSn4h.jpg" class="pageimg" />
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#leModal">
-    閱讀
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="leModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">3D</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="https://i.imgur.com/Y5j2GbE.jpg" class="pageimg" />
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eModal">
-    閱讀
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="eModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">字</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="https://i.imgur.com/IiwtfIu.jpg" class="pageimg" />
-          <img src="https://i.imgur.com/9rQR85s.jpg" class="pageimg" />
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">
-    閱讀
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="https://i.imgur.com/Zgfd5xc.jpg" class="pageimg" />
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#odal">
-    閱讀
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="odal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Apologize</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="https://i.imgur.com/vGR6sGV.jpg" class="pageimg" />
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-        </div>
-      </div>
-    </div>
-  </div>  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dal">
-    閱讀
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="dal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Clean your Goddamn Shit</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="https://i.imgur.com/0mDiPwr.jpg" class="pageimg" />
-          <img src="https://i.imgur.com/Iajg3t6.jpg" class="pageimg" />
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-        </div>
-      </div>
-    </div>
-  </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

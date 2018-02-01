@@ -1,36 +1,98 @@
-.container{
-    position: relative;
+body {
+    margin: 0px;
+}
+
+p {
+    font-family: Microsoft JhengHei;
+}
+
+#mainNavigation {
+    background: linear-gradient(to top,#ffbfbf,#bbe9ff);
+    position: fixed;
+    float: left;
+    margin: 0px;
+    padding-bottom: 50%;
+    width: 50%;
+}
+
+#otherContent {
+    background-color: rgb(255, 255, 255);
+    float: right;
+    margin: 0px;
+    width: 50%;
+    padding-bottom: 5500px;
+}
+
+#title-c {
     text-align: center;
-    color: white;
+    font-size: 10vmin;
 }
-.centered2{
-  position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size:10vmin;
-}
-.centered{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size:20vmin;
-}
-.parallax {
-    /* The image used */
-    background-image: url("../PHOTOS/miscbg.jpg");
-  
-    /* Set a specific height */
-    height: 1000px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+#title-e {
+    text-align: center;
+    font-size: 8vmin;
 }
 .pageimg{
     max-width:100%;
     max-height:100%;
+}
+#titlebox {
+    margin-top: 20%;
+}
+
+.bookcover {
+    position: relative;
+    width: 20%;
+    height:auto;
+display: inline-block;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: -5;
+    content: '';
+}
+
+.bookcover:hover .parentdiv {
+    height: 100%;
+}
+
+.booktitle {
+    position: absolute;
+    z-index: 50;
+    color: white;
+    font-size: 3vmin;
+}
+
+.parentdiv {
+    transition: 1s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+}
+
+.text {
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }

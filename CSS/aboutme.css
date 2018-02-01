@@ -1,9 +1,43 @@
+.color-violet {
+    background-color: #7A4EAB;
+  }
+  .color-indigo {
+    background-color: #4332CF;
+  }
+  .color-blue {
+    background-color: rgb(131, 193, 255);
+  }
+  .color-green {
+    background-color: rgb(128, 255, 116);
+  }
+  .color-yellow {
+    background-color: #FAEB33;
+  }
+  .color-orange {
+    background-color: #F19031;
+  }
+  .color-red {
+    background-color: rgb(255, 168, 175);
+  }
+  .color-white {
+      background-color: white;
+  }
+body{
+    transition: background-color 1s ease;
+}
+.panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
 
+
+    /* turn above on to see the edge of panels */
+  }
 #back-top {
 	position: fixed;
 	bottom: 30px;
-right:40px;
+  right:40px;
 }
+
 #back-top a {
 	height:88px;
 	width: 88px;
@@ -106,20 +140,19 @@ right:40px;
 #top{
 width:100vw;
 height:28vh;
-background-color: #ffdcdc;
 }
 #bottom{
-    background-color: #80ffd9;
+
     height:72vh;
     width:100vw;
 }
 #top2{
-    background-color: #80ffd9;
+
     height:28vh;
     width:100vw;
 }
 #bottom2{
-    background-color: #00ffaa;
+
     height:72vh;
     width:100vw;
 }
