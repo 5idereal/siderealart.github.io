@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <html>
+       <head>
+    <title>BMI Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript">
+
+        function computeBMI() {
+            var height = Number(document.getElementById("height").value);
+            //var heightunits = document.getElementById("heightunits").value;
+            var weight = Number(document.getElementById("weight").value);
+            //var weightunits = document.getElementById("weightunits").value;
+
+            //Convert all units to metric
+            //if (heightunits == "inches") height /= 39.3700787;
+            //if (weightunits == "lb") weight /= 2.20462;
+
+            //        var BMI = weight /Math.pow(height, 2)*10000;
+            var BMI = weight/ (height*height);
+
+            document.getElementById("output").innerText = BMI*1;
+
+            var output = Math.round(BMI * 100) / 100
+            if (output < 18.5)
+                document.getElementById("comment").innerText = "過輕";
+            else if (output >= 18.5 && output <= 25)
+                document.getElementById("comment").innerText = "正常";
+            else if (output >= 25 && output <= 30)
+                document.getElementById("comment").innerText = "過重";
+            else if (output > 30)
+                document.getElementById("comment").innerText = "超重";
+            // document.getElementById("answer").value = output; 
+        }
+    </script>
+     </head>
+     <body>
+  
+    <p>我的身高為<input type="text" id="height"/>
+       <!-- <select type="multiple" id="heightunits">
+            <option value="metres" selected="selected">metres</option>
+            <option value="inches">inches</option>
+        </select>-->
+         公尺</p>
+    <p>我的體重為<input type="text" id="weight"/>
+        <!--<select type="multiple" id="weightunits">
+            <option value="kg" selected="selected">kilograms</option>
+            <option value="lb">pounds</option>
+        </select>-->
+    公斤</p>
+    <input type="submit" value="計算BMI" onclick="computeBMI();">
+    <h1>BMI為<span id="output"></span></h1>
+
+    <h2>您<span id="comment">?</span>了</h2> 
+     </body>
+    </html>
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>我的身高是<input type="text" id="height"/></p>
+    <p>我的體重是<input type="text" id="weight"/></p>
+    <button id="calculate">計算</button>
+    <script>
+        document.getElementById("calculate").onclick = function(){myfunction()};
+
+        function myfunction(){
+            var t
+        }
+        
+        </script>
+</body>
+</html>-->
